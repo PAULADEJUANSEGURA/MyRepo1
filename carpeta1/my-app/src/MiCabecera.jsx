@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 function MiCabecera(){
-    return <header>
+    return <Fragment>
+        <header>
            <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
             <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div className="container-fluid">
@@ -58,5 +59,6 @@ function MiCabecera(){
         </nav>
     </nav>
 </header>
+</Fragment>
 }
 export default MiCabecera;
