@@ -3,13 +3,15 @@ users.count = 0
 
 users.push(
     { id: ++users.count ,
-     name: 'John Doe', 
+     name: 'John',
+     surname: 'Doe',
      email: 'john@doe.com', 
-     password: '123123123' })
+     password: '123456789' })
 
 users.push(
     { id: ++users.count , 
-    name: 'Ada Love', 
+    name: 'Ada', 
+    surname: 'Lovelace' ,
     email: 'ada@love.com', 
-    password: '123123123' })
+    password: 'AdaLoveLace' })
 

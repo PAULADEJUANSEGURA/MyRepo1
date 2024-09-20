@@ -3,10 +3,10 @@ const loginForm = loginView.querySelector('.login-form');
 
 loginForm.onsubmit = function (event) {
     event.preventDefault();
-    const emailInput = loginForm.querySelector('#login-email');
+    const emailInput = loginForm.querySelector('.login-email');
     const email = emailInput.value
 
-    const passwordInput = loginForm.querySelector('#login-password');
+    const passwordInput = loginForm.querySelector('.login-password');
     const password = passwordInput.value
 
     const result = authenticateUser(email, password)

@@ -1,4 +1,4 @@
-function registerUser(name, email, password) {
+function registerUser(name, surname, email, password) {
     let user;
     for (let i = 0; i < users.length; i++) {
         const _user = users[i]
@@ -18,6 +18,7 @@ function registerUser(name, email, password) {
 
         user.id = ++users.count;
         user.name = name;
+        user.surname = surname;
         user.email = email;
         user.password = password;
 

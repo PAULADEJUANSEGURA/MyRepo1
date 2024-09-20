@@ -1,0 +1,36 @@
+main {
+    background-color: #FABC3F;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+
+#uno-carousel-texto {
+    width: 400px;
+    height: 400px;
+}
+
+#seccion-lateral {
+    float: left;
+    margin-top: -300px;
+    margin-left: 500px;
+    margin-right: 100px;
+}
+
+/*#dos-posts {
+    clear: both;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}*/
+
+
+.en-linea {
+    display: inline-block;
+    margin: 10px;
+}
+
+.off {
+    display: none;
+}

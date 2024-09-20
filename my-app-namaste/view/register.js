@@ -4,16 +4,19 @@ const registerForm = registerView.querySelector('.register-form');
 
 registerForm.onsubmit = function (event) {
     event.preventDefault();
-    const nameInput = registerForm.querySelector('#register-name');
+    const nameInput = registerForm.querySelector('.register-name');
     const name = nameInput.value
 
-    const emailInput = registerForm.querySelector('#register-email');
+    const surnameInput = registerForm.querySelector('.register-surname');
+    const surname = surnameInput.value
+
+    const emailInput = registerForm.querySelector('.register-email');
     const email = emailInput.value
 
-    const passwordInput = registerForm.querySelector('#register-password');
+    const passwordInput = registerForm.querySelector('.register-password');
     const password = passwordInput.value
 
-    const result = registerUser(name, email, password)
+    const result = registerUser(name, surname, email, password)
 
     if (result === false)
         alert('User already exists')
