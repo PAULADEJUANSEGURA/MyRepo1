@@ -5,15 +5,10 @@ import "./style.css";
 
 function App() {
   return (
-    <><nav>
-     <MiCabecera />,
-     </nav>
-     <main>
-        <MiCarrousel />,
-    </main>
-      <div>
-       <MiFormRegister />,   
-      </div>
+    <>
+    <MiCabecera />,
+    <MiCarrousel />,
+    <MiFormRegister />,   
     </>
   );
 }

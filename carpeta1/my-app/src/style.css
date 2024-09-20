@@ -1,9 +1,14 @@
-main {
+body {
     background-color: #FABC3F;
-    width: 100%;
-    height: 300px;
+    
 }
 
+
+
+.peq {
+    width: 450px !important;
+    height: 450px !important;
+}
 
 
 .off {

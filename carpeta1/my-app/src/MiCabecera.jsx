@@ -2,8 +2,7 @@ import React, {Fragment} from 'react';
 
 function MiCabecera(){
     return <Fragment>
-        <header>
-           <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+          <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
             <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Namasté 🙏</a>
@@ -58,7 +57,6 @@ function MiCabecera(){
             </div>
         </nav>
     </nav>
-</header>
 </Fragment>
 }
 export default MiCabecera;
