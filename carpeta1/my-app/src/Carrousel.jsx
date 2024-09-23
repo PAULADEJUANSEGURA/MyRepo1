@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-function MiCarrousel() {
+function Carrousel() {
   return (
         <Fragment>
     <div id="carouselExample" className="carousel slide">
@@ -37,4 +37,4 @@ function MiCarrousel() {
   );
 }
 
-export default MiCarrousel;
+export default Carrousel;

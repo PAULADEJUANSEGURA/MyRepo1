@@ -1,6 +1,29 @@
 import React from "react";
 
-function MiFormRegister() {
+function Register(props) {
+
+  const handleLoginClick = event => {
+    event.preventDefault()
+
+    props.onLoginClick()
+}
+
+const handleRegisterSubmit = event => {
+    event.preventDefault()
+
+    /*const name = event.target.name.value
+    const email = event.target.email.value
+    const password = event.target.password.value
+
+    try {
+        registerUser(name, email, password)
+            .then(() => props.onRegistered())
+            .catch(error => alert(error.message))
+    } catch (error) {
+        alert(error.message)
+    }*/
+}  
+
   return (
     <section className="register-view">
       <div className="card en-linea">
@@ -14,7 +37,7 @@ function MiFormRegister() {
           <h5 className="card-title">
             Registrate aquí y crea tu cuenta de usuario
           </h5>
-          <form className="register-form" action="submit">
+          <form className="register-form" action="submit" onSubmit={handleRegisterSubmit}>
             <div className="form-floating mb-3">
               <input
                 type="text"
@@ -60,7 +83,7 @@ function MiFormRegister() {
             </button>
           </form>
           <hr />
-          <a href="#" className="btn btn-primary register-login-link">
+          <a href="#" className="btn btn-primary register-login-link" onClick={handleLoginClick}>
             Hacer Log-in
           </a>
         </div>
@@ -68,4 +91,4 @@ function MiFormRegister() {
     </section>
   );
 }
-export default MiFormRegister;
+export default Register;
