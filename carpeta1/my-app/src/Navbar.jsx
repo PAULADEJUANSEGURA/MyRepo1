@@ -1,6 +1,21 @@
 import React, {Fragment} from 'react';
 
-function Navbar(){
+function Navbar(props){
+
+    const handleLoginClick = event => {
+        event.preventDefault()
+    
+        props.onLoginClick()
+    }
+    
+    const handleRegisterClick = event => {
+        event.preventDefault()
+
+        props.onRegisterClick()
+    }
+    
+
+
     return <Fragment>
           <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
             <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -17,10 +32,10 @@ function Navbar(){
                             <a className="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="register.html">Crea una cuenta</a>
+                            <a className="nav-link" href="#" onClick={handleRegisterClick}>Crea una cuenta</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Accede a tu cuenta</a>
+                            <a className="nav-link" href="#" onClick={handleLoginClick} >Accede a tu cuenta</a>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

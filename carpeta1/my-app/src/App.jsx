@@ -24,14 +24,14 @@ function App() {
 if (view === 'login') {
   return (
     <>
-    <Navbar />,
+    <Navbar onRegisterClick={handleRegisterClick} onLoginClick={handleLoginClick}/>,
     <Carrousel />,
     <Login onRegisterClick={handleRegisterClick} onLoggedIn={handleLoggedIn}/> 
     </>
  )} else if (view === 'register'){
     return (
     <>
-    <Navbar />,
+    <Navbar onRegisterClick={handleRegisterClick} onLoginClick={handleLoginClick}/>,
     <Carrousel />,
     <Register onLoginClick={handleLoginClick} onRegistered={handleRegistered} />,   
     </>

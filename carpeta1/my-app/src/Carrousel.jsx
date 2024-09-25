@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 function Carrousel() {
   return (
         <Fragment>
+<div className="display-flex">         
     <div id="carouselExample" className="carousel slide">
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -32,6 +33,14 @@ function Carrousel() {
     <span className="carousel-control-next-icon" aria-hidden="true" />
     <span className="visually-hidden">Next</span>
   </button>
+</div>
+<section className="animation-title">
+  <h1>
+    <span className="title">Bienvenido a la red social</span>
+    <span className="title">para la gente que hace</span>
+    <span className="title">yoga y meditacion</span>
+  </h1>
+  </section>
 </div>
     </Fragment>
   );
